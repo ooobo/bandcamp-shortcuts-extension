@@ -14,4 +14,4 @@ Configure shortcuts from the `Keyboard Shortcuts` menu accessible via the link a
 
 # Installation
 
-Download zip to desktop, drag into [chrome://extensions](chrome://extensions) (make sure developer mode is ticked)
+[Download zip](https://github.com/ooobo/bandcamp-shortcuts-extension/archive/master.zip) to desktop, drag into [chrome://extensions](chrome://extensions) (make sure developer mode is ticked)
