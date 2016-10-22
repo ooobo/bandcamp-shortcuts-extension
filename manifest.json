@@ -1,27 +1,21 @@
 {
-  "name": "Shortcuts for Trello",
+  "name": "Keyboard Shortcuts for Bandcamp",
   "version": "1.1.0",
   "manifest_version": 2,
-  "description": "Adds more extensions to Trello",
-  "homepage_url": "https://github.com/bulkan/shortcuts-for-trello",
-  "icons": {
-    "16": "icons/16.png",
-    "48": "icons/48.png",
-    "128": "icons/128.png"
-  },
-  "default_locale": "en",
+  "description": "Adds keyboard shortcuts for bandcamp",
+  "homepage_url": "https://github.com/ooobo/bandcamp-ext",
+  
   "background": {
     "page": "src/bg/background.html",
     "persistent": false
   },
   "permissions": [
-    "tabs",
-    "clipboardWrite"
+    "tabs"
   ],
   "content_scripts": [
     {
       "matches": [
-        "https://trello.com/*"
+        "*://*.bandcamp.com/*"
       ],
       "js": [
         "src/inject/inject.js",
@@ -30,33 +24,14 @@
     }
   ],
   "commands": {
-    "movecard": {
-      "description": "Show the Move dialog menu"
+    "play-track": {
+      "description": "Play track"
     },
-    "copycard": {
-      "description": "Show the Copy dialog menu"
+    "prev-track": {
+      "description": "Previous track"
     },
-    "yank": {
-      "description": "Copy short URL"
-    },
-    "movecardup": {
-      "description": "Move card to top"
-    },
-    "notifications": {
-      "description": "Show notifications"
-    },
-    "scrolltop": {
-      "description": "Scroll to top of list"
-    },
-    "scrollbottom": {
-      "description": "Scroll to bottom of list"
-    },
-    "collapselist": {
-      "description": "Collapse a list"
-    },
-    "newboard": {
-      "description": "Create a new board"
+    "next-track": {
+      "description": "Next track"
     }
-    
   }
 }
