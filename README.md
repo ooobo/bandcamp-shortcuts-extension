@@ -1,8 +1,7 @@
 # Shortcuts for Bandcamp
 
 Chrome extension that adds  keyboard shortcuts to Bandcamp.
-Based heavily on Trello Shortcuts Plus by @bulkan
-![ext](https://raw.githubusercontent.com/bulkan/shortcuts-for-trello/)
+Based heavily on Trello Shortcuts Plus by [@bulkan](https://raw.githubusercontent.com/bulkan/shortcuts-for-trello/)
 
 Configure shortcuts from the `Keyboard Shortcuts` menu accessible via the link at the bottom of
 [chrome://extensions](chrome://extensions)
