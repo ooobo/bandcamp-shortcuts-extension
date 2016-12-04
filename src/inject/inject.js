@@ -28,7 +28,7 @@ chrome.extension.sendMessage({}, function() {
   function playTrack() {
     $('.playbutton')[0].click();
   }
-  function prevTrack() {
+  function nextTrack() {
     var currentTrackRel = $('.current_track').attr('rel');
           var currentTrackNum = parseInt(currentTrackRel.substr(currentTrackRel.indexOf("=") + 1));
           var findString = '[rel="tracknum='+(currentTrackNum+1)+'"]';
@@ -39,7 +39,7 @@ chrome.extension.sendMessage({}, function() {
             $('.track_list.track_table').find('[rel="tracknum=1"]').find('.play_status').click();
           }
   }
-  function nextTrack() {
+  function prevTrack() {
     var currentTrackRel = $('.current_track').attr('rel');
           var currentTrackNum = parseInt(currentTrackRel.substr(currentTrackRel.indexOf("=") + 1));
           var findString = '[rel="tracknum='+(currentTrackNum-1)+'"]';
